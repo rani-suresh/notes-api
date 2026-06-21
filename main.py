@@ -1,7 +1,8 @@
 from fastapi import FastAPI
 from routes import router
 from database import engine, Base
-
+from models.user import User, UserCreate
+from models.model import Note, NoteCreate
 
 
 app = FastAPI()
